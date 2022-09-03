@@ -64,14 +64,17 @@ Usage
 
 General usage syntax:
 
-    idntag [-h] [-k] [-v] path [path ...]
+    idntag [-h] [-k] [-v] [-w "_"] [-s path] [-f path] path [path ...]
 
 Options:
 
-    path            path of a file or directory
-    -h, --help      show this help message and exit
-    -k, --keepname  keep original filename
-    -v, --version   show program's version number and exit
+    path                   Path of a file or directory to process
+    -h, --help             Show this help message and exit
+    -k, --keepname         Keep original filename
+    -w, --whitespace_char  Character to replace whitespace with in filename (does not work when --keepname argument is used)
+    -s, --success          Move successfully processed files to this directory
+    -f, --fail             Move files that failed to process to this directory
+    -v, --version          Show program's version number and exit
 
 License
 =======
